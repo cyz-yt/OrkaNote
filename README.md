@@ -6,7 +6,7 @@ A Notepad for Windows with tabs that come back after closing, colours for code, 
 
 **[Download the latest version](https://github.com/cyz-yt/OrkaNote/releases/latest)** · [Website](https://cyzs-retroweb.rf.gd/orkanote.php)
 
-Current version: **3.0 "Assam"** - written from scratch.
+Current version: **3.0.1 "Assam"** - written from scratch.
 
 ## What it does
 
@@ -47,7 +47,7 @@ Current version: **3.0 "Assam"** - written from scratch.
 
 ## Installing
 
-1. Download `OrkaNote-3.0-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
+1. Download `OrkaNote-3.0.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
 2. Run it. Windows may show "Windows protected your PC", because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. Have OrkaNote 2.5? Setup finds it and offers to remove it.
 4. **Full** installs everything. **Just the editor** leaves out the toolbar, Tools, macros, Run, update checks and problem reports - a plain notepad that never goes online. **Custom** lets you pick.
@@ -59,7 +59,7 @@ Current version: **3.0 "Assam"** - written from scratch.
 **Quiet install** (for scripts):
 
 ```
-OrkaNote-3.0-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
+OrkaNote-3.0.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
 ```
 
 `/openwith=no` leaves file associations alone, `/contextmenu=yes` adds "Edit with OrkaNote", `/updates=no` turns off the update check, `/TYPE=compact` installs just the editor, and `/ALLUSERS` installs for everyone.
@@ -82,10 +82,17 @@ OrkaNote-3.0-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=da
 
 ## What goes online
 
-- **Update check:** at most once a day, OrkaNote reads a small version file from the website. A new version is downloaded only from this GitHub page, only after you say yes, and only runs when its SHA-256 matches. *Settings > Updates*
+- **Update check:** each time OrkaNote starts, it reads a small version file from the website in the background. A new version is downloaded only from this GitHub page, only after you say yes, and only runs when its SHA-256 matches. *Settings > Updates*
 - **Problem reports:** sent only when you click **Send Report**. You see every line first, and there is none of your text, file names, folders or your Windows user name in it. *Settings > General*
 
 Both can be left out in Setup ("Just the editor").
+
+## Changes in 3.0.1 "Assam"
+
+A bugfix release for 3.0.
+
+- The toolbar icons show up with Windows scaling at 125, 150 or 175 percent - most laptops. Before, the buttons were there but empty.
+- New versions are looked for every time OrkaNote starts, not once a day.
 
 ## Changes in 3.0 "Assam"
 
