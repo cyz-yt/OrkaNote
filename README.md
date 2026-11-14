@@ -1,12 +1,12 @@
 # OrkaNote
 
-A Notepad for Windows with tabs that come back after closing, colours for code, Run (F9) for your scripts and a dark theme. Light, quick, and nothing to sign up for.
+A Notepad for Windows with tabs that come back after closing, colours for code, a Markdown preview, spelling, Run (F9) for your scripts and a dark theme. Light, quick, and nothing to sign up for.
 
-![OrkaNote](screenshots/main-light.png)
+![OrkaNote](screenshots/markdown-light.png)
 
 **[Download the latest version](https://github.com/cyz-yt/OrkaNote/releases/latest)** · [Website](https://cyzs-retroweb.rf.gd/orkanote.php)
 
-Current version: **3.0.1 "Assam"** - written from scratch.
+Current version: **3.1 "Bancha"**
 
 ## What it does
 
@@ -17,7 +17,14 @@ Current version: **3.0.1 "Assam"** - written from scratch.
 **A real code editor**
 - Line numbers, colours for HTML, CSS, JavaScript, JSON, Python, batch files, C-like languages, VB, INI and XML, code folding and matching brackets.
 - Find and Replace with regular expressions, whole words and all open tabs at once. Go to Line (Ctrl+G).
+- Find in Files (Ctrl+Shift+F) searches a whole folder with subfolders.
+- Word suggestions after three letters, bookmarks on lines (Ctrl+F2, F2).
+- Colours in CSS and HTML get a little square next to them - click it to pick another colour.
 - Word wrap, zoom, a toolbar with the icons Windows itself uses.
+
+**Markdown and spelling**
+- A `.md` file shows its finished look next to the text (Ctrl+Shift+M), and the two scroll together.
+- Spelling with the dictionaries already in Windows: a red wavy line and suggestions on right click.
 
 **Run your scripts (F9)**
 - Python, PHP, Node.js, Ruby, PowerShell, batch files and VBScript start right from OrkaNote, in a console that waits for a key so you can read the result. Web pages open in your browser.
@@ -33,13 +40,18 @@ Current version: **3.0.1 "Assam"** - written from scratch.
 - A file changed by another program reloads by itself, or OrkaNote asks first if you changed it too.
 - OrkaNote can sit in "Open with" for text files and add "Edit with OrkaNote" to the right-click menu.
 
-**Light or dark, Windows 11 style**
-- The dark theme darkens the whole window: menus, tabs, title bar, scroll bars and dialogs.
+**Light, dark or like Windows, Windows 11 style**
+- The dark theme darkens the whole window: menus, tabs, title bar, scroll bars and dialogs. By default it follows Windows.
+- Windows in 8 languages: English, Polish, German, Spanish, French, Italian, Portuguese and Ukrainian - or make your own.
 
 ## Screenshots
 
 | | |
 |---|---|
+| ![Markdown, dark](screenshots/markdown-dark.png) | ![Spelling](screenshots/spelling.png) |
+| The Markdown preview in the dark theme | Spelling |
+| ![Find in Files](screenshots/find-in-files.png) | ![Colours in CSS](screenshots/css-colours.png) |
+| Find in Files | Colours in CSS |
 | ![Dark theme](screenshots/main-dark.png) | ![Run](screenshots/run.png) |
 | The dark theme | Running a Python script with F9 |
 | ![Tools](screenshots/tools-menu.png) | ![Settings](screenshots/settings.png) |
@@ -47,10 +59,10 @@ Current version: **3.0.1 "Assam"** - written from scratch.
 
 ## Installing
 
-1. Download `OrkaNote-3.0.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
+1. Download `OrkaNote-3.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
 2. Run it. Windows may show "Windows protected your PC", because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. Have OrkaNote 2.5? Setup finds it and offers to remove it.
-4. **Full** installs everything. **Just the editor** leaves out the toolbar, Tools, macros, Run, update checks and problem reports - a plain notepad that never goes online. **Custom** lets you pick.
+4. **Express** installs everything. **Custom** lets you pick - including **Just the editor**, which leaves out the toolbar, Tools, macros, Run, update checks and problem reports: a plain notepad that never goes online.
 
 **Requirements:** Windows 7 SP1 or newer and .NET Framework 4.7.2 or newer. Windows 10 and 11 already have it.
 
@@ -59,7 +71,7 @@ Current version: **3.0.1 "Assam"** - written from scratch.
 **Quiet install** (for scripts):
 
 ```
-OrkaNote-3.0.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
+OrkaNote-3.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
 ```
 
 `/openwith=no` leaves file associations alone, `/contextmenu=yes` adds "Edit with OrkaNote", `/updates=no` turns off the update check, `/TYPE=compact` installs just the editor, and `/ALLUSERS` installs for everyone.
@@ -72,6 +84,9 @@ OrkaNote-3.0.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=
 | Ctrl+Tab, Ctrl+Shift+Tab | Next and previous tab |
 | Ctrl+O, Ctrl+S, Ctrl+Shift+S | Open, save, save as |
 | Ctrl+F, Ctrl+H, F3 | Find, replace, find next |
+| Ctrl+Shift+F | Find in Files |
+| Ctrl+Shift+M | Markdown preview |
+| Ctrl+F2, F2 | Bookmark a line, jump to the next one |
 | Ctrl+G | Go to line |
 | F9 | Run the file |
 | Ctrl+Shift+R, Ctrl+Shift+P | Record and play a macro |
@@ -86,6 +101,16 @@ OrkaNote-3.0.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=
 - **Problem reports:** sent only when you click **Send Report**. You see every line first, and there is none of your text, file names, folders or your Windows user name in it. *Settings > General*
 
 Both can be left out in Setup ("Just the editor").
+
+## Changes in 3.1 "Bancha"
+
+- Markdown preview (Ctrl+Shift+M).
+- Spelling with the dictionaries already in Windows.
+- Find in Files (Ctrl+Shift+F).
+- Word suggestions and bookmarks on lines.
+- Colour squares in CSS and HTML.
+- The theme follows Windows, a new tab guesses its language, and a picture offers OrkaPaint.
+- Windows in 8 languages, or make your own. Report a Problem in Settings.
 
 ## Changes in 3.0.1 "Assam"
 
@@ -107,5 +132,6 @@ Written from scratch - everything above is new. From 2.5 only one thing is gone:
 ## More from the same author
 
 - [OrkaPlayer](https://github.com/cyz-yt/OrkaPlayer): a media player with lyrics that sing along, karaoke, radio, TV and podcasts.
+- [OrkaPaint](https://github.com/cyz-yt/OrkaPaint): a drawing program for Windows - a bit more than plain Paint, with layers, selections and effects.
 - [OrkaLinux](https://github.com/cyz-yt/OrkaLinux): a Linux distribution built on Debian 13 with KDE Plasma 6.
 - [cyz's ISO Creator](https://github.com/cyz-yt/cyzs-ISO-Creator): makes an ISO file from a folder - for getting documents into a virtual machine without VMware Tools.
