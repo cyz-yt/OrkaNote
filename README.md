@@ -6,7 +6,7 @@ A Notepad for Windows with tabs that come back after closing, colours for code, 
 
 **[Download the latest version](https://github.com/cyz-yt/OrkaNote/releases/latest)** · [Website](https://cyzs-retroweb.rf.gd/orkanote.php)
 
-Current version: **3.1 "Bancha"**
+Current version: **3.1.1 "Bancha"**
 
 ## What it does
 
@@ -40,8 +40,8 @@ Current version: **3.1 "Bancha"**
 - A file changed by another program reloads by itself, or OrkaNote asks first if you changed it too.
 - OrkaNote can sit in "Open with" for text files and add "Edit with OrkaNote" to the right-click menu.
 
-**Light, dark or like Windows, Windows 11 style**
-- The dark theme darkens the whole window: menus, tabs, title bar, scroll bars and dialogs. By default it follows Windows.
+**Light or dark, Windows 11 style - or classic**
+- The dark theme darkens the whole window: menus, tabs, title bar, scroll bars and dialogs. At first it is the same as Windows - pick the other one in Settings. The classic look gives square menus, tabs and buttons, like Windows 10.
 - Windows in 8 languages: English, Polish, German, Spanish, French, Italian, Portuguese and Ukrainian - or make your own.
 
 ## Screenshots
@@ -52,14 +52,16 @@ Current version: **3.1 "Bancha"**
 | The Markdown preview in the dark theme | Spelling |
 | ![Find in Files](screenshots/find-in-files.png) | ![Colours in CSS](screenshots/css-colours.png) |
 | Find in Files | Colours in CSS |
-| ![Dark theme](screenshots/main-dark.png) | ![Run](screenshots/run.png) |
+| ![Dark theme](screenshots/dark-python.png) | ![Run](screenshots/run.png) |
 | The dark theme | Running a Python script with F9 |
 | ![Tools](screenshots/tools-menu.png) | ![Settings](screenshots/settings.png) |
 | The Tools menu | Settings |
+| ![Classic look](screenshots/classic.png) | |
+| The classic look (3.1.1) | |
 
 ## Installing
 
-1. Download `OrkaNote-3.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
+1. Download `OrkaNote-3.1.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
 2. Run it. Windows may show "Windows protected your PC", because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. Have OrkaNote 2.5? Setup finds it and offers to remove it.
 4. **Express** installs everything. **Custom** lets you pick - including **Just the editor**, which leaves out the toolbar, Tools, macros, Run, update checks and problem reports: a plain notepad that never goes online.
@@ -71,7 +73,7 @@ Current version: **3.1 "Bancha"**
 **Quiet install** (for scripts):
 
 ```
-OrkaNote-3.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
+OrkaNote-3.1.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
 ```
 
 `/openwith=no` leaves file associations alone, `/contextmenu=yes` adds "Edit with OrkaNote", `/updates=no` turns off the update check, `/TYPE=compact` installs just the editor, and `/ALLUSERS` installs for everyone.
@@ -101,6 +103,14 @@ OrkaNote-3.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=da
 - **Problem reports:** sent only when you click **Send Report**. You see every line first, and there is none of your text, file names, folders or your Windows user name in it. *Settings > General*
 
 Both can be left out in Setup ("Just the editor").
+
+## Changes in 3.1.1 "Bancha"
+
+- A classic Windows 10 look: square menus, tabs and buttons.
+- Light or dark, the same as Windows at first.
+- A language editor in Settings. The Polish is written from scratch.
+- "Print" in the Explorer right-click menu, and the Explorer menu in the program's language.
+- A new "Up to Date" window.
 
 ## Changes in 3.1 "Bancha"
 
