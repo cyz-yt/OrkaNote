@@ -6,7 +6,7 @@ A Notepad for Windows with tabs that come back after closing, colours for code, 
 
 **[Download the latest version](https://github.com/cyz-yt/OrkaNote/releases/latest)** · [Website](https://cyzs-retroweb.rf.gd/orkanote.php)
 
-Current version: **3.1.1 "Bancha"**
+Current version: **3.1.2 "Bancha"**
 
 ## What it does
 
@@ -61,7 +61,7 @@ Current version: **3.1.1 "Bancha"**
 
 ## Installing
 
-1. Download `OrkaNote-3.1.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
+1. Download `OrkaNote-3.1.2-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaNote/releases/latest).
 2. Run it. Windows may show "Windows protected your PC", because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. Have OrkaNote 2.5? Setup finds it and offers to remove it.
 4. **Express** installs everything. **Custom** lets you pick - including **Just the editor**, which leaves out the toolbar, Tools, macros, Run, update checks and problem reports: a plain notepad that never goes online.
@@ -73,10 +73,12 @@ Current version: **3.1.1 "Bancha"**
 **Quiet install** (for scripts):
 
 ```
-OrkaNote-3.1.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
+OrkaNote-3.1.2-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=dark
 ```
 
 `/openwith=no` leaves file associations alone, `/contextmenu=yes` adds "Edit with OrkaNote", `/updates=no` turns off the update check, `/TYPE=compact` installs just the editor, and `/ALLUSERS` installs for everyone.
+
+Without these switches, an update keeps what is set now.
 
 ## Keyboard
 
@@ -104,12 +106,20 @@ OrkaNote-3.1.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /updates=yes /theme=
 
 Both can be left out in Setup ("Just the editor").
 
+## Changes in 3.1.2 "Bancha"
+
+Bug fixes. I am very sorry for putting out such faulty updates - 3.1.1 should not have gone out with these bugs.
+
+- "Print" is gone from the Explorer right-click menu - it did not work as it should. Ctrl+P in OrkaNote stays.
+- Language Editor: the name field no longer runs into its label, and a new Delete button.
+- Setup keeps your options on an update.
+
 ## Changes in 3.1.1 "Bancha"
 
 - A classic Windows 10 look: square menus, tabs and buttons.
 - Light or dark, the same as Windows at first.
 - A language editor in Settings. The Polish is written from scratch.
-- "Print" in the Explorer right-click menu, and the Explorer menu in the program's language.
+- "Print" in the Explorer right-click menu (removed again in 3.1.2), and the Explorer menu in the program's language.
 - A new "Up to Date" window.
 
 ## Changes in 3.1 "Bancha"
